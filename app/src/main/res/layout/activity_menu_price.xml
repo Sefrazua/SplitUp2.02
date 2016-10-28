@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+         >
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_weight="0.8"
+>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewname"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewprice"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17dp"
+            />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.2"
+            android:weightSum="1"
+
+            >
+
+            <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/Add"
+            android:layout_weight="0.3"
+            android:background="@android:drawable/ic_input_add" />
+    <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"/>
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/Delete"
+                android:layout_weight="0.3"
+                android:layout_marginRight="10dp"
+                android:background="@android:drawable/ic_delete" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
